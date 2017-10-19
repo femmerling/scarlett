@@ -1,0 +1,15 @@
+---
+
+version: '2'
+
+services:
+
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    environment:
+      SCARLETT_HOST: 0.0.0.0
+      SCARLETT_PORT: 8080
+      SCARLETT_DEBUG: 1
+      SCARLETT_DEFAULT_IMG: https://s3-ap-southeast-1.amazonaws.com/prismapp-files/no-product-image.png
