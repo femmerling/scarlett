@@ -12,10 +12,10 @@ def set_default_config():
         '0.0.0.0')
     environ.setdefault(
         'SCARLETT_PORT',
-        '8000')
+        '8080')
     environ.setdefault(
         'SCARLETT_DEBUG',
         '1')
     environ.setdefault(
         'SCARLETT_DEFAULT_IMG',
-        'https://docs.prismapp.io/assets/images/prism-logo.png')
+        'https://s3-ap-southeast-1.amazonaws.com/prismapp-files/no-product-image.png')
