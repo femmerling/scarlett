@@ -43,8 +43,11 @@ Scarlett will download and serve any image file on the fly
 use it by doing this
 
 ```
-<host>/url?=<image_url>
+<host>/<image_url without protocol>
 ```
+
+example:
+`https://scarlett.prismapp.io/popoluca.com/images/some/long/scheme/someimage.jpg`
 
 And voila it will display the image
 
