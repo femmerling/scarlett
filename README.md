@@ -47,3 +47,9 @@ use it by doing this
 ```
 
 And voila it will display the image
+
+## Environment Variables
+
+* `SCARLETT_DEFAULT_IMG` the default image used when the url is not found
+
+
