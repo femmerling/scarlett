@@ -6,6 +6,7 @@ set_default_config()
 
 from services import get_image_content
 from services import get_mimetype
+from services import set_expiry_headers
 
 def create_app():
     app = Sanic(__name__)
@@ -17,5 +18,6 @@ def create_app():
             response.write(content)
         return response.stream(
             get_image,
-            content_type=get_mimetype(image_url))
+            content_type=get_mimetype(image_url),
+            headers=set_expiry_headers())
     return app
