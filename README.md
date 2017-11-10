@@ -55,4 +55,9 @@ And voila it will display the image
 
 * `SCARLETT_DEFAULT_IMG` the default image used when the url is not found
 
+## Testing
+
+```
+$ nosetests --cover-html --cover-erase --cover-package=scarlett --cover-erase --with-xcoverage -v tests
+```
 
