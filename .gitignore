@@ -105,3 +105,4 @@ ENV/
 node_modules/
 static/
 __pycache__/
+.idea
