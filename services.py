@@ -55,12 +55,16 @@ MIMETYPE_EXT_MAP = {
     MIMETYPE_WEBP: EXT_WEBP
 }
 
+def get_version():
+    with open('version.txt', "r") as ver:
+        return ver.readline().replace('\n','')
 
 async def get_image_content(image_url):
     full_url = "http://{}".format(image_url)
+    user_agent = "Scarlett by Prismapp {}".format(get_version())
     try:
         headers = {
-            "User-Agent":"Scarlet by Prismapp"}
+            "User-Agent":user_agent}
         image = requests.get(full_url, headers=headers)
         if image.status_code > 399:
             image = requests.get(environ.get('SCARLETT_DEFAULT_IMG'))
