@@ -59,7 +59,9 @@ MIMETYPE_EXT_MAP = {
 async def get_image_content(image_url):
     full_url = "http://{}".format(image_url)
     try:
-        image = requests.get(full_url)
+        headers = {
+            "User-Agent":"Scarlet by Prismapp"}
+        image = requests.get(full_url, headers=headers)
         if image.status_code > 399:
             image = requests.get(environ.get('SCARLETT_DEFAULT_IMG'))
     except:
