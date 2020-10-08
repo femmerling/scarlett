@@ -18,4 +18,4 @@ def set_default_config():
         '1')
     environ.setdefault(
         'SCARLETT_DEFAULT_IMG',
-        'https://s3-ap-southeast-1.amazonaws.com/prismapp-files/no-product-image.png')
+        'https://placeimg.com/640/480/nature/sepia')

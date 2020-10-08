@@ -1,12 +1,8 @@
 # SCARLETT
 
-Translation service to convert http served image into https. Mainly because of our good friend LINE@
+Translation service to convert http served image into https. Can be used to make sure you always serve image under HTTPS. Just make sure you host it behind a HTTPS domain.
 
-## Why Scarlett?
-
-Scarlett Johansson plays in lost in translation :D
-
-![Scarlett Johansson](http://dazedimg.dazedgroup.netdna-cdn.com/1050/azure/dazed-prod/1130/9/1139096.jpg)
+This was actually part of Prism's service but being opensourced for reference implementation or learning purposes.
 
 ## Requirements
 
@@ -45,11 +41,11 @@ Scarlett will download and serve any image file on the fly
 use it by doing this
 
 ```
-<host>/<image_url without protocol>
+<host>/<image_url>
 ```
 
 example:
-`https://scarlett.prismapp.io/popoluca.com/images/some/long/scheme/someimage.jpg`
+`https://scarlett.example.com/https://originalhost.com/images/some/long/scheme/someimage.jpg`
 
 And voila it will display the image
 
