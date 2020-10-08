@@ -4,6 +4,8 @@ Translation service to convert http served image into https. Can be used to make
 
 This was actually part of Prism's service but being opensourced for reference implementation or learning purposes.
 
+Feel free to use and modify
+
 ## Requirements
 
 * Python3.6
@@ -34,6 +36,8 @@ Run app
 $ python serve.py
 ```
 
+To run this with docker, the dockerfile is available inside the `docker/` directory
+
 ## Usage
 
 Scarlett will download and serve any image file on the fly
@@ -58,4 +62,10 @@ And voila it will display the image
 ```
 $ nosetests --cover-html --cover-erase --cover-package=scarlett --cover-erase --with-xcoverage -v tests
 ```
+
+## Contributors
+
+[@femmerling](https://github.com/femmerling)
+[@tistaharahap](https://github.com/tistaharahap)
+[@rifkyalikiki](https://github.com/rifkyalikiki)
 
